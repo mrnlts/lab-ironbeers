@@ -1,0 +1,19 @@
+{{#if this.image_url}}    
+    <img src={{image_url}} alt="beer img">
+    <div id = "beer-info">
+        <h2> {{name}} </h2>
+        <p class="tagline"> {{tagline}} </p>
+        <p> {{description}} </p>
+    </div>
+
+{{else}}
+    <img src="/images/beer.png" alt="beer image" id="beer-img">
+    <div id = "beer-info">
+        <h2> {{name}} </h2>
+        <p class="tagline"> {{tagline}} </p>
+        <p> {{description}} </p>
+    </div>
+
+{{/if}}
+
+    

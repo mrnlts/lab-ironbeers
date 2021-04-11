@@ -11,11 +11,6 @@ body {
     height: max-content;
 }
 
-#body {
-    width: 70%;
-    margin: auto;
-}
-
 a {
     text-decoration: none;
     color: #f7f9f9;
@@ -32,8 +27,8 @@ nav > ul {
     background-color: #2081c3;
 }
 
-li {
-    padding: 10px;
+nav > ul > li {
+    padding: 30px;
 }
 
 button {
@@ -56,36 +51,82 @@ footer {
     color: #f7f9f9;
     background-color: #0a2c42;
     text-align: left;
-    padding: 10px 0 10px;
-}
-
-#beer-card {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin: 100px auto;
-    border: 1px solid black;
-    border-radius: 1%;
     padding: 30px;
 }
 
-#beer-card > img {
-    height: 20%;
-    width: 20%;
+#beer-card,
+#randombeer-card {
+    margin: 10px;
+    padding: 10px;
+    height: 100%;
 }
 
-#beer-info {
-    width: 60%;
+#beer-card {
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+    width: 30%;
+    flex-direction: column;
+}
+
+#beer-card > img {
+    height: 9rem;
+    width: 3rem;
+}
+
+#randombeer-card > img {
+    float:left;
+    height: 15rem;
+    width: 5rem;
+    margin: 50px;
+}
+
+#randombeer-card > #beer-info {
+    margin-top: 50px;
+}
+
+#beer-info, 
+#pairing, 
+#tips  {
+    width: 90%;
     text-align: left;
 }
 
 #beer-info > h2 {
-    font-size: 30px;
+    font-size: 20px;
     font-weight: bold;
-    margin-bottom: 20px;
 }
 
 #beer-info > p   {
-    font-size: 20px;
+    font-size: 15px;
     margin-bottom: 20px;
+}
+
+.tagline {
+    color: grey;
+    font-weight: bold;
+}
+
+#beers {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#pairing {
+    list-style: disc;
+    margin: 20px 0 20px 50px;
+}
+
+#pairing > li {
+}
+
+h2 {
+    text-align: left;
+    font-weight: bold;
+}
+
+#tips {
+    margin-bottom: 100px;
 }
