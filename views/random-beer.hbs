@@ -1,0 +1,22 @@
+{{#each this}}
+    {{#if this.name}}
+        <div id = "beer-card">
+            <img src={{image_url}} alt="beer img">
+            
+            <div id = "beer-info">
+                <h2> {{name}} </h2>
+                <p> {{tagline}} </p>
+                <p> {{description}} </p>
+                <h2>Food Pairing</h2>
+                
+                <ul>
+                    {{#each food_pairing}}
+                    <li>{{this}}</li>
+                    {{/each}}
+                </ul>
+                
+                <h2>Brewers Tips: </h2> <p> {{brewers_tips}} </p>
+            </div>
+        </div>
+    {{/if}}
+{{/each}}
