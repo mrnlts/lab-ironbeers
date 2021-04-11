@@ -11,6 +11,11 @@ body {
     height: max-content;
 }
 
+#body {
+    width: 70%;
+    margin: auto;
+}
+
 a {
     text-decoration: none;
     color: #f7f9f9;
@@ -46,11 +51,41 @@ button {
 }
 
 footer {
-    position: absolute;
-    bottom: 0%;
+    position: sticky;
     width: 100%;
     color: #f7f9f9;
     background-color: #0a2c42;
     text-align: left;
     padding: 10px 0 10px;
+}
+
+#beer-card {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 100px auto;
+    border: 1px solid black;
+    border-radius: 1%;
+    padding: 30px;
+}
+
+#beer-card > img {
+    height: 300px;
+    width: 100px;
+}
+
+#beer-info {
+    width: 60%;
+    text-align: left;
+}
+
+#beer-info > h2 {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+#beer-info > p   {
+    font-size: 20px;
+    margin-bottom: 20px;
 }
